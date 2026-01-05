@@ -1,0 +1,17 @@
+{
+  "name": "plume-extension",
+  "version": "1.0.0",
+  "description": "Plume - AI-powered Twitter/X engagement assistant Chrome extension",
+  "private": true,
+  "scripts": {
+    "generate-icons": "node scripts/generate-icons.js",
+    "build": "npm run generate-icons",
+    "postinstall": "npm run generate-icons"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
